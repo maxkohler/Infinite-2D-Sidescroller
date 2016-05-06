@@ -1,0 +1,55 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+    <title>Infinite</title>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+    <script type="text/javascript" src="js/gyro.min.js"></script>
+
+    <script type="text/javascript" src="js/boot.js"></script>
+    <script type="text/javascript" src="js/loadAssets.js"></script>
+    <script type="text/javascript" src="js/start.js"></script>
+
+    <script type="text/javascript" src="js/menu_main.js"></script>
+    <script type="text/javascript" src="js/menu_settings.js"></script>
+    <script type="text/javascript" src="js/menu_characters.js"></script>
+    <script type="text/javascript" src="js/game_play.js"></script>
+    <script type="text/javascript" src="js/game_over.js"></script>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <style type="text/css">
+        body
+        {
+            margin: 0;
+        }
+    </style>
+
+    <script>
+        (function()
+        {
+            game = new Phaser.Game(388, 218, Phaser.AUTO, '');
+
+            game.state.add('boot', bootState);
+            game.state.add('load', loadState);
+         
+            game.state.add('start', startState);
+            game.state.add('menu', menuState);
+            game.state.add('charactermenu', charactermenuState);
+            game.state.add('settingsmenu', settingsmenuState);
+         
+            game.state.add('play', playState);
+            game.state.add('gameover', gameoverState);
+         
+            game.state.start('boot');
+
+        })();    
+        </script>
+</head>
+<body>
+
+
+
+</body>
+</html>

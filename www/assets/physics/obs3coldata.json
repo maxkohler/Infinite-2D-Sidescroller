@@ -1,0 +1,18 @@
+{ 
+    
+    "obs3": [
+        
+        {
+            "density": 2,
+            "friction": 0,
+            "bounce": 0,
+            "isSensor":true, 
+            "filter":
+            {
+            	"categoryBits": 1,
+            	"maskBits": 65535
+            },
+            "shape": [   9, 43  ,  28, 53  ,  16, 58  ,  1, 51  ]
+        }
+    ]
+}
